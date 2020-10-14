@@ -13,3 +13,4 @@ xkcd-test-*
 *.o
 *.obj
 *.lst
+xkcdc
