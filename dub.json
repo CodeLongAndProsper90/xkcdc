@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"scott"
+	],
+	"copyright": "Copyright © 2020, scott",
+	"dependencies": {
+		"requests": "~>1.1.7"
+	},
+	"description": "A CLI xkcd client",
+	"license": "gplv3",
+	"name": "xkcdc"
+}

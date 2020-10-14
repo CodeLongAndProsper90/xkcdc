@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/xkcd
+xkcd.so
+xkcd.dylib
+xkcd.dll
+xkcd.a
+xkcd.lib
+xkcd-test-*
+*.exe
+*.o
+*.obj
+*.lst
