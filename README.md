@@ -2,13 +2,15 @@
 
 xkcdC is a command line client for the [xkcd](https://xkcd.com) webcomic.
 
-Right now, there are two command line flags for xkcdC:
+Right now, there are four command line flags for xkcdC:
 
 
 | Flag | Action |
 | ---- | ------ |
 | --verbose | Enable verbosity |
 | --export-json | Export the xkcd data as JSON |
+| --no-image | Disable image |
+| --force-image | Try to disp image even if not supported (WIP) |
 
 ## Compiling and installing:
 
