@@ -12,6 +12,7 @@ Right now, there are two command line flags for xkcdC:
 
 ## Compiling and installing:
 
+### Microsoft Windows is not supported officially and has not been tested
 To compile this, use `dmd build`.
 
 You'll need (On Arch Linux)
