@@ -4,6 +4,7 @@ import std.conv;
 import std.json;
 import std.getopt;
 import std.string;
+import image;
 
 int main(string[] args)
 {
@@ -19,13 +20,13 @@ int main(string[] args)
     {
       defaultGetoptPrinter("Help for xkcdc:", help.options);
     }
-  
+
   void log(string info)
   {
     if (verbose)
       writeln(info);
   }
-  
+
   log("Downloading current comic"); // Give some info
 
   // This is so we can tell if the comic exists or not
@@ -54,7 +55,10 @@ int main(string[] args)
     }
   else
     {
-      
+      string url = to!string(comic["img"]);
+      url = replace(url, "\\/", "/");
+      url = replace(url, "\"", "");
+      disp(url);
       string output = format(
                             "Title: %s\nImage: %s\n\nTranscript:\n===\n%s\n===\nAlt: %s",
                             text(comic["title"]),
@@ -62,11 +66,11 @@ int main(string[] args)
                             replace(text(comic["transcript"]), "\\n", "\n"),
                             text(comic["alt"]),
                             );
-      
+
       //      string output = format("Title: %s", text(comic["alt"]));
       writeln(output);
     }
 
   return 0;
-  
+
 }
