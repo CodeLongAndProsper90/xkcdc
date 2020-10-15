@@ -30,7 +30,7 @@ int main(string[] args)
 
   // This is so we can tell if the comic exists or not
   string current = to!string(getContent("https://xkcd.com/info.0.json"));
-  auto comic = parseJSON(current); 
+  auto comic = parseJSON(current); // Turn the downloaded string into JSON
 
   if (args.length > 1)
     {
